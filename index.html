@@ -6,32 +6,31 @@
     <title>Main Page</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .icon-grid {
-            display: flex;
-            flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
-            justify-content: space-evenly; /* Ensures equal spacing between items */
-            gap: 20px; /* Adds space between rows */
-            margin: 20px auto; /* Centers the grid on the page */
-            max-width: 1200px; /* Restricts grid width */
+           .icon-grid {
+            display: flex; /* Enables Flexbox */
+            justify-content: space-evenly; /* Ensures equal horizontal spacing */
+            align-items: center; /* Vertically aligns items */
+            margin: 20px auto; /* Centers the grid within the page */
+            max-width: 1200px; /* Restricts the maximum width */
         }
         
         .icon-container {
             display: flex;
-            flex-direction: column; /* Aligns icon and text vertically */
+            flex-direction: column; /* Aligns the icon and text vertically */
             align-items: center; /* Centers the content horizontally */
             text-align: center; /* Centers the text */
-            width: 150px; /* Sets a consistent width for each container */
+            width: 150px; /* Ensures consistent container width */
         }
         
         .icon-container img {
             width: 100px; /* Icon size */
             height: 100px; /* Icon size */
-            margin-bottom: 10px; /* Adds space between the icon and the title */
+            margin-bottom: 10px; /* Adds space between the icon and its title */
         }
         
         .icon-container span {
             font-size: 14px; /* Title font size */
-            color: #333; /* Title color */
+            color: #013220; /* Deep forest green for text */
         }
 
         .footer {
