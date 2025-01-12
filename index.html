@@ -6,26 +6,34 @@
     <title>Main Page</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .icon-container {
-            display: inline-block;
-            text-align: center;
-            margin: 20px;
-        }
-
-        .icon-container img {
-            width: 100px;
-            height: 100px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .icon-container span {
-            display: block;
-            margin-top: 10px;
-            font-size: 14px;
-            color: #333;
+        .icon-grid {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
+            justify-content: space-evenly; /* Ensures equal spacing between items */
+            gap: 20px; /* Adds space between rows */
+            margin: 20px auto; /* Centers the grid on the page */
+            max-width: 1200px; /* Restricts grid width */
         }
         
+        .icon-container {
+            display: flex;
+            flex-direction: column; /* Aligns icon and text vertically */
+            align-items: center; /* Centers the content horizontally */
+            text-align: center; /* Centers the text */
+            width: 150px; /* Sets a consistent width for each container */
+        }
+        
+        .icon-container img {
+            width: 100px; /* Icon size */
+            height: 100px; /* Icon size */
+            margin-bottom: 10px; /* Adds space between the icon and the title */
+        }
+        
+        .icon-container span {
+            font-size: 14px; /* Title font size */
+            color: #333; /* Title color */
+        }
+
         .footer {
             background-color: forestgreen;
             color: white;
