@@ -6,33 +6,25 @@
     <title>Main Page</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-           .icon-grid {
-            display: flex; /* Enables Flexbox */
-            justify-content: space-evenly; /* Ensures equal horizontal spacing */
-            align-items: center; /* Vertically aligns items */
-            margin: 20px auto; /* Centers the grid within the page */
-            max-width: 1200px; /* Restricts the maximum width */
-        }
-        
         .icon-container {
-            display: flex;
-            flex-direction: column; /* Aligns the icon and text vertically */
-            align-items: center; /* Centers the content horizontally */
-            text-align: center; /* Centers the text */
-            width: 150px; /* Ensures consistent container width */
-        }
-        
-        .icon-container img {
-            width: 100px; /* Icon size */
-            height: 100px; /* Icon size */
-            margin-bottom: 10px; /* Adds space between the icon and its title */
-        }
-        
-        .icon-container span {
-            font-size: 14px; /* Title font size */
-            color: #013220; /* Deep forest green for text */
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
         }
 
+        .icon-container img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .icon-container span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
         .footer {
             background-color: #013220;
             color: white;
