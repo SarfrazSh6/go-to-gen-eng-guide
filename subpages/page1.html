@@ -67,7 +67,14 @@
     <main>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <iframe src="https://graphcommons.com/graphs/a854a83e-070f-4db9-ab1e-45e83c81864c" width="100%" height="600px" style="border: none; overflow: auto;"></iframe>
-        
+      <script>
+          // Dynamically adjust iframe height
+          var iframe = document.getElementById('myIframe');
+          iframe.onload = function() {
+            var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            iframe.style.height = iframeDoc.body.scrollHeight + 'px';
+          };
+        </script>  
       <!-- Button to open the website in a new window -->
       <button onclick="window.open('https://graphcommons.com/graphs/a854a83e-070f-4db9-ab1e-45e83c81864c', '_blank', 'width=800,height=600');">
         Open Website in New Window
