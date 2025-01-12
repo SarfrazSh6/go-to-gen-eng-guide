@@ -7,20 +7,18 @@
     <link rel="stylesheet" href="css/styles.css">
     <style>
         @font-face {
-            font-family: 'ArkPixel';
-            src: url('assets/fonts/ark-pixel-font.woff2') format('woff2'),
-                 url('assets/fonts/ark-pixel-font.woff') format('woff'),
-                 url('assets/fonts/ark-pixel-font.ttf') format('truetype');
+            font-family: 'CustomFont';
+            src: url('assets/fonts/pixelated.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
         
         .title {
-            font-family: 'ArkPixel', sans-serif;
-            font-size: 48px; /* Adjust as needed */
+            font-family: 'CustomFont', sans-serif; /* Fallback to a standard font if unavailable */
+            font-size: 36px; /* Adjust as needed */
             color: #013220; /* Deep forest green */
             text-align: center;
-            margin-top: 20px;
+            margin: 20px 0;
         }
 
         .icon-container {
