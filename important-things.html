@@ -43,12 +43,31 @@
         li {
             margin-bottom: 8px; /* Adds some space between the bullet points */
         }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            text-align: left;
+        }
+        body {
+            background-image: url('../assets/icons/038bcd6e-752d-4b5e-abd0-435aab179159.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Important Things for General Engineering</h1>
     </header>
+    <div class="container">
     <main>
         <h2>Key Points</h2>
         <ul>
@@ -127,7 +146,8 @@
 
 
 
-    </main>
+</main>
+    </div>
     <br>
     <a href="./index.html">Back to Main Page</a>
     <br>
