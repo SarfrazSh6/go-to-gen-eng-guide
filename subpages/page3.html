@@ -23,11 +23,21 @@
         .container {
             max-width: 800px;
             margin: 20px auto;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
         }
+        
+        body {
+            background-image: url('path/to/your/image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
         h1, h2, h3 {
             color: #0056b3;
         }
