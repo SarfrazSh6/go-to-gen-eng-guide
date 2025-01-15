@@ -1,139 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Abroad Prerequisites</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    .class-list, .class-details {
-      margin: 20px 0;
-    }
-    .class-list a {
-      display: block;
-      margin: 10px 0;
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .class-list a:hover {
-      text-decoration: underline;
-    }
-    .back-link {
-      margin-top: 20px;
-      display: block;
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .back-link:hover {
-      text-decoration:
-    }
-  </style>
-  <script>
-    const classes = {
-      "AE-UY 4613": {
-        description: "Aerodynamics (3 Credits) - Explores incompressible inviscid flow, airfoil and wing geometry, aerodynamic forces, and more.",
-        prerequisite: "ENGR-UH 2212"
-      },
-      "CE-UY 3173": {
-        description: "Structural Design (3 Credits) - Covers reinforced concrete beams, columns, slabs, and steel structural design principles.",
-        prerequisite: "ENGR-UH 3410"
-      },
-      "CE-UY 4153": {
-        description: "Structural Design Project (3 Credits) - Modeling, analysis, and design of steel or concrete building structures using computer-aided software.",
-        prerequisite: "ENGR-UH 3430 and ENGR-UH 3431"
-      },
-      "CS-UY 1134": {
-        description: "Data Structures and Algorithms (4 Credits) - Abstract data types, implementation of standard data structures, and algorithm analysis.",
-        prerequisite: "CS-UH 1001 or ENGR-UH 1000"
-      },
-      "CS-UY 2204": {
-        description: "Digital Logic and State Machine Design (4 Credits) - Covers digital systems, combinational and sequential circuits, and programmable logic devices.",
-        prerequisite: "CS-UH 1001 or ENGR-UH 1000"
-      },
-      "CS-UY 2413": {
-        description: "Design & Analysis of Algorithms (3 Credits) - Fundamental principles of algorithm design and analysis, including dynamic programming and NP-completeness.",
-        prerequisite: "ENGR-UH 3510 or CS-UH 1050 and CS-UH 1002"
-      },
-      "CS-UY 3224": {
-        description: "Introduction to Operating Systems (4 Credits) - Concepts of operating systems including resource allocation, process management, and file systems.",
-        prerequisite: "(ENGR-UH 3510 or CS-UH 1050) and (CS-UH 2010 or ENGR-UH 3511)"
-      },
-      "CS-UY 3923": {
-        description: "Computer Security (3 Credits) - Covers cryptographic systems, security policy formation, and issues like malicious code and Trojan horses.",
-        prerequisite: "CS-UH 2010 or ENGR-UH 3511"
-      },
-      "CS-UY 3933": {
-        description: "Network Security (3 Credits) - Topics include cryptographic systems, TCP/IP security, intrusion detection, and secure e-commerce.",
-        prerequisite: "CS-UH 3012 or ENGR-UH 3512"
-      },
-      "ME-UY 3313": {
-        description: "Fluid Mechanics (3 Credits) - Introduces conservation laws, Bernoulli’s equations, and viscous flow analysis.",
-        prerequisite: "ENGR-UH 3710 and MATH-UH 1020"
-      },
-      "ME-UY 3333": {
-        description: "Thermodynamics (3 Credits) - Covers properties of pure substances, first and second laws of thermodynamics, and entropy.",
-        prerequisite: "MATH-UH 1020"
-      },
-      "ME-UY 4214": {
-        description: "Finite Element Modeling, Design, and Analysis (4 Credits) - Analytical solutions compared with Finite Element Analysis.",
-        prerequisite: "ENGR-UH 3210, MATH-UH 1020, MATH-UH 1023, and MATH-UH 1024"
-      },
-      "ME-UY 4633": {
-        description: "Biomaterials (3 Credits) - Basic properties of biomaterials, cell-biomaterial interactions, and applications in implants and medical devices.",
-        prerequisite: "ENGR-UH 2012 and ENGR-UH 3120"
-      }
-      // Add additional classes here if needed
-    };
-
-    function showDetails(classCode) {
-      const detailsDiv = document.getElementById('class-details');
-      const listDiv = document.getElementById('class-list');
-      const classInfo = classes[classCode];
-
-      if (classInfo) {
-        detailsDiv.innerHTML = `
-          <h2>${classCode}</h2>
-          <p><strong>Description:</strong> ${classInfo.description}</p>
-          <h3>NYUAD Prerequisite:</h3>
-          <p>${classInfo.prerequisite}</p>
-          <a href="#" class="back-link" onclick="goBack()">Back to Class List</a>
-        `;
-        listDiv.style.display = 'none';
-        detailsDiv.style.display = 'block';
-      }
-    }
-
-    function goBack() {
-      const detailsDiv = document.getElementById('class-details');
-      const listDiv = document.getElementById('class-list');
-      detailsDiv.style.display = 'none';
-      listDiv.style.display = 'block';
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYUAD Study Abroad Prerequisites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        .class-list a {
+            color: #0056b3;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .class-list a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: block;
+            margin: 10px 0;
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .note {
+            background: #fffae6;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to Finding NYUAD Prerequisites for Your Study Abroad Classes</h1>
-  <p>These are the options we have below. I will add the classes soon under study abroad classes.</p>
+    <div class="container">
+        <h1>Welcome to NYUAD Prerequisites</h1>
+        <p>Welcome to finding NYUAD prerequisites for your study abroad classes. These are the options we have below. Classes and prerequisites will be added soon.</p>
+        
+        <h2>Study Abroad Classes</h2>
+        <div class="class-list">
+            <a href="#" onclick="showDetails('aerodynamics')">AE-UY 4613 Aerodynamics</a>
+            <a href="#" onclick="showDetails('structuralDesign')">CE-UY 3173 Structural Design</a>
+            <a href="#" onclick="showDetails('dataStructures')">CS-UY 1134 Data Structures and Algorithms</a>
+            <!-- Add more classes as needed -->
+        </div>
 
-  <div id="class-list" class="class-list">
-    <h2>Study Abroad Classes</h2>
-    ${Object.keys(classes)
-      .map(
-        (classCode) =>
-          `<a href="#" onclick="showDetails('${classCode}')">${classCode} - ${classes[classCode].description.split(" - ")[0]}</a>`
-      )
-      .join("")}
-  </div>
+        <div id="classDetails" style="display:none;">
+            <h2 id="classTitle"></h2>
+            <p id="classDescription"></p>
+            <h3>NYUAD Prerequisite</h3>
+            <p id="classPrerequisite"></p>
+            <a href="#" class="back-link" onclick="showClassList()">← Back to Study Abroad Classes</a>
+        </div>
 
-  <div id="class-details" class="class-details" style="display: none;"></div>
+        <div class="note">
+            Note: This is a work in progress. More classes and details will be added soon!
+        </div>
+    </div>
+
+    <script>
+        const classes = {
+            aerodynamics: {
+                title: "AE-UY 4613 Aerodynamics",
+                description: "This course explores incompressible inviscid flow, airfoil geometry, aerodynamic forces, and high-lift devices.",
+                prerequisite: "ENGR-UH 2212"
+            },
+            structuralDesign: {
+                title: "CE-UY 3173 Structural Design",
+                description: "This course covers steel and reinforced concrete structural design principles and practices.",
+                prerequisite: "ENGR-UH 3410"
+            },
+            dataStructures: {
+                title: "CS-UY 1134 Data Structures and Algorithms",
+                description: "This course covers abstract data types, standard data structures, and fundamental algorithms.",
+                prerequisite: "CS-UH 1001 or ENGR-UH 1000"
+            }
+            // Add more classes as needed
+        };
+
+        function showDetails(classKey) {
+            const classInfo = classes[classKey];
+            document.getElementById('classTitle').innerText = classInfo.title;
+            document.getElementById('classDescription').innerText = classInfo.description;
+            document.getElementById('classPrerequisite').innerText = classInfo.prerequisite;
+            document.getElementById('classDetails').style.display = 'block';
+            document.querySelector('.class-list').style.display = 'none';
+        }
+
+        function showClassList() {
+            document.getElementById('classDetails').style.display = 'none';
+            document.querySelector('.class-list').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
-
