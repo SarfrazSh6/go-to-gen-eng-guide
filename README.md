@@ -1,4 +1,3 @@
-# go-to-gen-eng-guide
 # About the NYUAD General Engineering Guide
 
 Welcome to the NYU Abu Dhabi (NYUAD) General Engineering Guide—a comprehensive, student-created resource designed to assist engineering students in navigating their academic journey. This platform offers detailed mind maps and essential information across various engineering tracks, ensuring you have the tools needed for effective course planning and success at NYUAD.
