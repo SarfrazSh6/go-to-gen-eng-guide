@@ -20,7 +20,7 @@ Learn about the application of computational methods and tools in solving comple
 Discover the fundamentals of aerospace engineering, including the design, development, and testing of aircraft and spacecraft, preparing you for a career in this dynamic field. This page offers a mindmap for the courses that you must complete within your 4 years. 
 
 ### Things to Know for General Engineering
-Access a curated list of tips, resources, and advice tailored to general engineering students, helping you navigate common challenges and maximize your academic experience. Also contains a guide on how to navigate takign graduate level classes when you study abroad. 
+Access a curated list of tips, resources, and advice tailored to general engineering students, helping you navigate common challenges and maximize your academic experience. Also contains a guide on how to navigate taking graduate level classes when you study abroad. 
 
 ---
 
